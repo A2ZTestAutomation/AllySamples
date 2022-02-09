@@ -72,7 +72,11 @@ public class A11yTestOne {
 	  List<Rule> violations = results.getViolations();
 	  System.out.println("No. of violations with tag name : "+violations.size());
 	  System.out.println("Updated after first push");
+
 	  System.out.println("Updated by Tester1");
+
+	  System.out.println("Updated by Tester 2");
+
 	  AxeReporter.writeResultsToJsonFile(reportFile, results);
 	  AxeReporter.writeResultsToTextFile(reportFile, violations);
 	  
