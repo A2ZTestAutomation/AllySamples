@@ -71,6 +71,7 @@ public class A11yTestOne {
 	  Results results = builder.analyze(driver, driver.findElement(By.tagName("div")));
 	  List<Rule> violations = results.getViolations();
 	  System.out.println("No. of violations with tag name : "+violations.size());
+	  System.out.println("Updated after first push");
 	  AxeReporter.writeResultsToJsonFile(reportFile, results);
 	  AxeReporter.writeResultsToTextFile(reportFile, violations);
 	  
